@@ -63,22 +63,31 @@ workTime: function workTime(time) {
 				mainList.employers[i] = name;
 			}
 		},
-		
 		chooseShopItems: function chooseShopItems() {
 			
 			let items = prompt("перечислите через запятую товары", '');
-			while (typeof(items) === 'string' || items == '' || items == null)  {	
+			while ( !isNaN(items) || items === '' || items === null)  {	
 			items = prompt('перечислите через запятую товары', '');	
 		}
 
 			mainList.shopItems = items.split(",");
 			mainList.shopItems.push(prompt("подождать еще ", ''));
 			mainList.shopItems.sort();
-
-			
-
-		chooseShopItems();
-		};
+		}
 		
-		
-	
+	};
+mainList.chooseShopItems();
+
+
+
+console.log(mainList)
+
+	mainList.shopItems.forEach(function(item, i, arr) {
+		alert("У нас вы можете купить: " + (1+i) + " : " + item );
+
+	});
+
+
+for (key in mainList) {
+	console.log('Наш магазин включает в себя:' + key);
+}
