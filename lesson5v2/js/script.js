@@ -1,25 +1,25 @@
-let open_btn = document.getElementById('open_btn'); //кнопка
+let open_btn = document.getElementById('open-btn'); //кнопка
 
 
 //столбец слева
-let name_value = document.getElementsByClassName('name_value');
-let budget_value = document.getElementsByClassName('budget_value');
-let goods_value = document.getElementsByClassName('goods_value');
-let items_value = document.getElementsByClassName('items_value');
-let employers_value = document.getElementsByClassName('employers_value');
-let discount_value = document.getElementsByClassName('discount_value');
-let isopen_value = document.getElementsByClassName('isopen_value');
+let name_value = document.getElementsByClassName('name-value');
+let budget_value = document.getElementsByClassName('budget-value');
+let goods_value = document.getElementsByClassName('goods-value');
+let items_value = document.getElementsByClassName('items-value');
+let employers_value = document.getElementsByClassName('employers-value');
+let discount_value = document.getElementsByClassName('discount-value');
+let isopen_value = document.getElementsByClassName('isopen-value');
 
 //столбец справа (категории)
-let goods_item = document.getElementsByClassName('goods_item');
+let goods_item = document.getElementsByClassName('goods-item');
 
 //кнопки 3 шт
 let btn = document.getElementsByTagName('button');
 
 //поля ввода
-document.querySelector('.choose-item'); //Введите продукты через запятую
-document.querySelector('.time-value'); //Сколько сейчас времени?
-document.querySelector('.count-budget-value'); //Расчет дневного бюджета
+choose = document.querySelector('.choose-item'); //Введите продукты через запятую
+time = document.querySelector('.time-value'); //Сколько сейчас времени?
+count = document.querySelector('.count-budget-value'); //Расчет дневного бюджета
 
 //поля ввода имен сотрудников
 document.querySelector('.hire-employers-item'); 

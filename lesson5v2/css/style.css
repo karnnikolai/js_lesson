@@ -41,7 +41,7 @@ body {
       -ms-transform: translateY(-60px);
           transform: translateY(-60px);
 }
-.open_btn {
+.open-btn {
   border: none;
   outline: none;
   color: #fff;
@@ -91,27 +91,27 @@ body {
   border: 1px solid black;
 }
 .main-info .name,
-.main-info .name_value,
+.main-info .name-value,
 .main-info .budget,
-.main-info .budget_value,
+.main-info .budget-value,
 .main-info .goods,
-.main-info .goods_value,
+.main-info .goods-value,
 .main-info .items,
-.main-info .items_value,
+.main-info .items-value,
 .main-info .employers,
-.main-info .employers_value,
+.main-info .employers-value,
 .main-info .discount,
-.main-info .discount_value,
+.main-info .discount-value,
 .main-info .isopen,
-.main-info .isopen_value {
+.main-info .isopen-value {
   width: 48%;
   margin-top: 10px;
   min-height: 40px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
-.main-info .isopen_value,
-.main-info .discount_value {
+.main-info .isopen-value,
+.main-info .discount-value {
   background-color: red;
 }
 .main-functions {
@@ -130,7 +130,7 @@ body {
   text-align: center;
   font-size: 20px;
 }
-.main-functions .goods_item {
+.main-functions .goods-item {
   display: inline-block;
   margin: 0 auto;
   margin-top: 10px;
