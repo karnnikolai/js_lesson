@@ -17,12 +17,12 @@ let goods_item = document.getElementsByClassName('goods-item');
 let btn = document.getElementsByTagName('button');
 
 //поля ввода
-choose = document.querySelector('.choose-item'); //Введите продукты через запятую
-time = document.querySelector('.time-value'); //Сколько сейчас времени?
-count = document.querySelector('.count-budget-value'); //Расчет дневного бюджета
+let choose = document.querySelector('.choose-item'); //Введите продукты через запятую
+let time = document.querySelector('.time-value'); //Сколько сейчас времени?
+let count = document.querySelector('.count-budget-value'); //Расчет дневного бюджета
 
 //поля ввода имен сотрудников
-document.querySelector('.hire-employers-item'); 
+let hire = document.querySelectorAll('.hire-employers-item'); 
 
 
 
