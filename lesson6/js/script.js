@@ -125,6 +125,22 @@ budget_btn.addEventListener('click', () =>{
 	count_budget_value.value = money / 30;
 });
 
+
+//блокировка Input в бюджете
+document.getElementById("budget").onkeydown = function(e){
+if((e.which >=48 && e.which <=57)  // цифры
+	|| (e.which >=96 && e.which <=105)  // num lock
+	|| e.which==8 // backspace
+	|| (e.which >=37 && e.which <=40) // стрелки
+   || e.which==46) // delete 
+{
+    return true;
+} else {
+    return false;            
+}		 
+}
+
+
 //найм сотрудников
 employers_btn.addEventListener('click', () => {
 		for (let i = 0; i < hire_employers_item.length ; i++) {
