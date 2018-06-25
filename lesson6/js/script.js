@@ -27,6 +27,10 @@ let open = document.getElementById('open-btn'), //кнопка
 //поля ввода имен сотрудников
 	hire_employers_item = document.querySelectorAll('.hire-employers-item'); 
 
+
+	budget_btn.disabled = 1; // отключение кнопок
+	goods_btn.disabled = 1; // отключение кнопок
+	employers_btn.disabled = 1; // отключение кнопок
 //переменные
 let money,
 	price;
@@ -41,6 +45,9 @@ open.addEventListener('click', () => {
 	budget_value.textContent = money;
 
 	name_value.textContent = prompt('Название вашего магазина?', '').toUpperCase();
+	budget_btn.disabled = 0; // включение кнопок
+	goods_btn.disabled = 0; // включение кнопок
+	employers_btn.disabled = 0; // включение кнопок
 });
 
 let mainList = {
@@ -89,6 +96,8 @@ time_value.addEventListener('change', () => {
 	if (time < 0) {
 	console.log('Такого не может быть!');
 	mainList.open = false;
+	
+
 	}	else if (time > 8 && time < 20) {
 		console.log('Время работать!');
 		mainList.open = true;
@@ -109,15 +118,13 @@ time_value.addEventListener('change', () => {
 });
 
 
-// вычисление дисконта ???????????????????????????????????
-discount_value.addEventListener('change', () => {
-	let discount = discount_value.value;
-		if (mainList.discount == true) {
-			price = (price/100)*80;
-		}
+// вычисление дисконта 
 
-	});
-
+function discount() {
+	if (mainList.discount = true){
+		price = (price/100)*80;
+	}
+}
 
 
 // расчет бюджета за 30 дней (по 1 дню) 
@@ -127,19 +134,7 @@ budget_btn.addEventListener('click', () =>{
 
 
 //блокировка Input в бюджете
-document.getElementById("budget").onkeydown = function(e){
-if((e.which >=48 && e.which <=57)  // цифры
-	|| (e.which >=96 && e.which <=105)  // num lock
-	|| e.which==8 // backspace
-	|| (e.which >=37 && e.which <=40) // стрелки
-   || e.which==46) // delete 
-{
-    return true;
-} else {
-    return false;            
-}		 
-}
-
+count_budget_value.readOnly = 1;
 
 //найм сотрудников
 employers_btn.addEventListener('click', () => {
